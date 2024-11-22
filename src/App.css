@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aqua; /* Full-page background */
+  margin: 0; /* Remove default browser spacing */
+  padding: 0; /* Remove default browser spacing */
+  font-family: Arial, sans-serif; /* Optional: define a global font */
+}
+
+.App {
+  text-align: center;
+  margin: 50px auto 0;
+  width: 90%;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px 15px;
+}
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+} 
+
+.search input {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+} 
+.Search input::placeholder {
+  color: #555;
+  font-weight: 500;
+  font-style: italic;
+}
+
+button {
+  width: 78px; /* Updated */
+  height: 44px; /* Updated */
+  border: none;
+  border-radius: 9%; /* Updated */
+  background-color: #84cef5; /* Updated */
+  color: red;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fff;
+}
+
+.date {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: oblique;
+}
+
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+
+.form{
+  position: absolute;
+  top: 29px;
+  left: 368px;
+  width: 91px;
+  height: 32px;
+  border-radius: 60px;
+  background-color: rgba(116, 202, 216, 1);
+}
