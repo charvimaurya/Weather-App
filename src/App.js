@@ -76,30 +76,42 @@ function App() {
         <div className="location">
           {data.weather && <h1>{data.name}</h1>}
         </div>
-        <div className="description">
-         {data.weather && <h1>{data.weather[0].description}</h1> }
-          
-        </div>
-        <div className="temperature">
-          {data.main && (
-            <>
-              <h1>Max: {Math.round(data.main.temp_max - 273.15)}°C</h1>
-              <h1>Min: {Math.round(data.main.temp_min - 273.15)}°C</h1>
-            </>
-          )}
-        </div>
 
         <div className="date">
           {data.dt && data.timezone !== undefined && (
             <h2>{formatDate(data.dt, data.timezone)}</h2>
           )}
+
+        <div className="description">
+         {data.weather && <h2>{data.weather[0].description}</h2> }
           
         </div>
+        <div className="temperature">
+          {data.main && (
+            <>
+            <div className = "max-min">
+            <div className = "max">
+              <h1>Max: {Math.round(data.main.temp_max - 273.15)}°C</h1>
+              </div>
+              <div className = "min">
+              <h1>Min: {Math.round(data.main.temp_min - 273.15)}°C</h1>
+              </div>
+              </div>
+            </>
+          )}
+        </div>
+
+        
+          
+        </div>
+        <div className = "weather-info">
+          
         <div className="wind-speed">
           {data.wind && <h2>Wind Speed: {data.wind.speed} m/s</h2> }
         </div>
         <div className="humidity">
           {data.main && <h2>Humidity: {data.main.humidity}%</h2>}
+        </div>
         </div>
         <div className="feels-like">
           {data.main && (
